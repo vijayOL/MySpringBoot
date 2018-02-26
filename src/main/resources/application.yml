@@ -1,0 +1,8 @@
+server:
+  port: 8081
+  context-path: /springboot
+name: 唐丽娟
+age: 18
+person:
+  name: vijayT
+  age: 18
