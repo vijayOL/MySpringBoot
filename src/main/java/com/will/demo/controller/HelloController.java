@@ -3,11 +3,7 @@ package com.will.demo.controller;
 import com.will.demo.vo.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Description:
@@ -32,6 +28,9 @@ public class HelloController {
     @Value("${age}")
     private String age;
 
+    @Value("${content}")
+    private String content;
+
     @GetMapping(value ="/hi")
     public String say(){
         return "name:"+name+",age:"+age;
@@ -41,4 +40,10 @@ public class HelloController {
     public String print(){
         return "name:"+person.getName()+",age:"+person.getAge();
     }
+
+    @GetMapping(value ="/printContent")
+    public String printContent(){
+        return content;
+    }
+
 }
