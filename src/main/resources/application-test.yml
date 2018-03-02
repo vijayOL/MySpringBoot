@@ -1,0 +1,9 @@
+server:
+  port: 8081
+  context-path: /springboot
+name: 唐伟健
+age: 27
+content: "name:${name},age:${age}"
+person:
+  name: vijayT
+  age: 18

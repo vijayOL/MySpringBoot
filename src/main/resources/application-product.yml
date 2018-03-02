@@ -1,0 +1,9 @@
+server:
+  port: 9090
+  context-path: /springboot
+name: 唐丽娟
+age: 18
+content: "name:${name},age:${age}"
+person:
+  name: vijayT
+  age: 18
